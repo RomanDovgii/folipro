@@ -437,11 +437,14 @@ html {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.main {
+  overflow: hidden; }
+
 .main__hero {
   margin-top: 28.3rem; }
 
 .main__more {
-  margin-top: 41.5rem; }
+  margin-top: 42.7rem; }
 
 .main__why {
   margin-top: 24.9rem; }
@@ -458,7 +461,15 @@ html {
 .footer__wrapper {
   width: 100%;
   max-width: 166rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.footer__img {
+  position: absolute;
+  top: -3.1rem;
+  left: -17.3rem;
+  -webkit-transform: rotate(-16deg);
+          transform: rotate(-16deg); }
 
 .footer__title {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
@@ -515,7 +526,19 @@ html {
   width: 100%;
   max-width: 166rem;
   margin: 0 auto;
-  padding-left: 4.8rem; }
+  padding-left: 4.8rem;
+  position: relative; }
+
+.hero__img {
+  position: absolute;
+  right: 3.4rem;
+  top: -27.2rem; }
+
+.hero__line {
+  position: absolute;
+  z-index: -1;
+  top: -577px;
+  left: -490px; }
 
 .hero__text {
   font-size: 2.9rem;
@@ -528,7 +551,20 @@ html {
 .more__wrapper {
   width: 100%;
   max-width: 166rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.more__img {
+  position: absolute;
+  top: 0.7rem;
+  left: -29.2rem; }
+
+.more__star {
+  position: absolute;
+  top: 14rem;
+  left: 38rem;
+  -webkit-transform: rotate(-14deg);
+          transform: rotate(-14deg); }
 
 .more__title {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
@@ -558,7 +594,31 @@ html {
 .why__wrapper {
   width: 100%;
   max-width: 166rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.why__star {
+  position: absolute;
+  top: 0rem;
+  right: 5.6rem;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg); }
+
+.why__slider-wrapper {
+  position: relative;
+  overflow: hidden; }
+  .why__slider-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5000px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 50%;
+    left: -200px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1; }
 
 .why__title {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
@@ -570,13 +630,14 @@ html {
 
 .slider {
   width: 100%;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin-top: 6rem;
   padding-left: 1rem; }
+  .slider::-webkit-scrollbar {
+    width: 0; }
 
 .slide {
   min-width: 92rem;
@@ -589,7 +650,9 @@ html {
   display: -ms-flexbox;
   display: flex; }
   .slide:first-child {
-    margin-left: 0; }
+    margin-left: 13rem; }
+  .slide:last-child {
+    margin-right: 13rem; }
 
 .slide__content {
   padding-top: 2.8rem;
@@ -609,7 +672,15 @@ html {
   width: 100%;
   max-width: 166rem;
   margin: 0 auto;
-  max-width: 192rem; }
+  max-width: 192rem;
+  position: relative; }
+
+.target__star {
+  position: absolute;
+  top: -1.3rem;
+  left: 26rem;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg); }
 
 .target__title {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
@@ -629,6 +700,10 @@ html {
 
 .card__intro {
   position: relative; }
+  .card__intro img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .card__intro::after {
     content: "";
     position: absolute;
@@ -660,12 +735,30 @@ html {
   background-color: #1F2128;
   width: 58rem;
   margin-top: 17.3rem;
-  border-radius: 5rem; }
+  border-radius: 5rem;
+  position: relative; }
+  .card__content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 95px;
+    background-color: #ffffff;
+    top: -134px;
+    left: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%); }
 
 .realization__wrapper {
   width: 100%;
   max-width: 166rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.realization__img {
+  position: absolute;
+  top: -12.1rem;
+  right: 38.2rem; }
 
 .realization__title {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
@@ -701,7 +794,15 @@ html {
 .team__wrapper {
   width: 100%;
   max-width: 166rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.team__star {
+  position: absolute;
+  top: -3.7rem;
+  right: 82.1rem;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg); }
 
 .team__title {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
@@ -752,7 +853,16 @@ html {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative; }
+  .team__content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10rem;
+    height: 0.1rem;
+    background-color: #ffffff;
+    left: -17rem; }
 
 .team__name {
   font-family: 'Montserrat', 'Arial', sans-serif;
@@ -766,11 +876,23 @@ html {
   font-weight: 500;
   font-size: 2.9rem;
   line-height: 150%;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
   .team__job--leader {
-    color: #FF98E5; }
+    color: #FF98E5;
+    position: relative; }
   .team__job:first-of-type {
     margin-top: 2rem; }
+
+.team__leader {
+  position: absolute;
+  top: -1.1rem;
+  right: -7.8rem; }
 
 .note {
   display: -webkit-box;

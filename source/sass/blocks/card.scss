@@ -1,6 +1,11 @@
 .card__intro {
   position: relative;
 
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -33,4 +38,17 @@
   width: 58rem;
   margin-top: 17.3rem;
   border-radius: 5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 95px;
+    background-color: $white;
+    top: -134px;
+    left: 50%;
+    transform: translateX(50%);
+  }
 }

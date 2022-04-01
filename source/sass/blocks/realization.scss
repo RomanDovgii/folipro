@@ -1,5 +1,12 @@
 .realization__wrapper {
   @include wrapper;
+  position: relative;
+}
+
+.realization__img {
+  position: absolute;
+  top: -12.1rem;
+  right: 38.2rem;
 }
 
 .realization__title {

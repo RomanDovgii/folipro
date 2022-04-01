@@ -1,3 +1,7 @@
-mixin svg(name, width, height)
-  svg(width=width, height=height, aria-hidden="true")
-    use(xlink:href="#" + name)
+mixin svg(name, width, height, className)
+  if className
+    svg(class=className width=width, height=height, aria-hidden="true")
+      use(xlink:href="#" + name)
+  else
+    svg(width=width, height=height, aria-hidden="true")
+      use(xlink:href="#" + name)

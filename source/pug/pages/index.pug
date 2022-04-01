@@ -30,12 +30,16 @@ html(lang="en")
         main.body__main.main
             section.main__hero.hero
                 .hero__wrapper
-                    .hero__content
-                        +svg("logo", 594, 113)
-                        p.hero__text Информационная система поддержки студенческой проектной деятельности в высших учебных заведениях
-                    img.hero__img(src="", alt="")
+                  +svg("long-line", 2620, 5090, 'hero__line')
+                  +svg("hero", 775, 779, 'hero__img')
+                  .hero__content
+                      +svg("logo", 594, 113)
+                      p.hero__text Информационная система поддержки студенческой проектной деятельности в высших учебных заведениях
+                  img.hero__img(src="", alt="")
             section.main__more.more
               .more__wrapper
+                +svg('star', 170, 170, 'more__star')
+                +svg('info', 600, 600, 'more__img')
                 h2.more__title Познакомимся поближе
                 .more__text-wrapper
                   p.more__text
@@ -59,145 +63,158 @@ html(lang="en")
                     | приток абитуриентов.
             section.main__why.why
                 .why__wrapper
-                    h2.why__title
-                      | Почему стоит
-                      | выбрать нас?
-                    ul.why__slider.slider
-                        li.slider__slide.slide
-                            +picture('slider', 'png', 'scale', 'scale', 'scale', 222, 222, 'Изображение масштабируемость')
-                            .slide__content
-                                h3.slide__title.txt-pink Масштабируемость
-                                p.slide__text Разработка системы независимо в любых масштабах
-                        li.slider__slide.slide
-                            +picture('slider', 'png', 'client', 'client', 'client', 222, 222, 'Изображение клиент')
-                            .slide__content
-                                h3.slide__title.txt-pink Клиент всегда прав
-                                p.slide__text Изменение системы под требования заказчика
-                        li.slider__slide.slide
-                            +picture('slider', 'png', 'everyone', 'everyone', 'everyone', 222, 222, 'Изображение для каждого')
-                            .slide__content
-                                h3.slide__title.txt-pink Каждому свое
-                                p.slide__text Индивидуальный подход при разработке
-                        li.slider__slide.slide
-                            +picture('slider', 'png', 'profit', 'profit', 'profit', 222, 222, 'Изображение выгодность')
-                            .slide__content
-                                h3.slide__title.txt-pink Выгодность
-                                p.slide__text Гибкая ценовая политика
-                        li.slider__slide.slide
-                            +picture('slider', 'png', 'quality', 'quality', 'quality', 222, 222, 'Изображение качество')
-                            .slide__content
-                                h3.slide__title.txt-pink Качественность
-                                p.slide__text Гарантия качественного результата
+                  +svg('star', 181, 170, 'why__star')
+                  h2.why__title
+                    | Почему стоит
+                    | выбрать нас?
+                .why__slider-wrapper.swiper
+                  ul.why__slider.slider.swiper-wrapper
+                      li.slider__slide.slide.swiper-slide
+                          +picture('slider', 'png', 'scale', 'scale', 'scale', 222, 222, 'Изображение масштабируемость')
+                          .slide__content
+                              h3.slide__title.txt-pink Масштабируемость
+                              p.slide__text Разработка системы независимо в любых масштабах
+                      li.slider__slide.slide.swiper-slide
+                          +picture('slider', 'png', 'client', 'client', 'client', 222, 222, 'Изображение клиент')
+                          .slide__content
+                              h3.slide__title.txt-pink Клиент всегда прав
+                              p.slide__text Изменение системы под требования заказчика
+                      li.slider__slide.slide.swiper-slide
+                          +picture('slider', 'png', 'everyone', 'everyone', 'everyone', 222, 222, 'Изображение для каждого')
+                          .slide__content
+                              h3.slide__title.txt-pink Каждому свое
+                              p.slide__text Индивидуальный подход при разработке
+                      li.slider__slide.slide.swiper-slide
+                          +picture('slider', 'png', 'profit', 'profit', 'profit', 222, 222, 'Изображение выгодность')
+                          .slide__content
+                              h3.slide__title.txt-pink Выгодность
+                              p.slide__text Гибкая ценовая политика
+                      li.slider__slide.slide.swiper-slide
+                          +picture('slider', 'png', 'quality', 'quality', 'quality', 222, 222, 'Изображение качество')
+                          .slide__content
+                              h3.slide__title.txt-pink Качественность
+                              p.slide__text Гарантия качественного результата
             section.main__target.target
                 .target__wrapper
-                    h2.target__title
-                      | На кого ориентирована
-                      | система?
-                    ul.target__list
-                        li.target__card.card
-                            .card__intro
-                                +picture('target', 'jpg', 'student', 'student', 'student', 640, 650, 'Читающий студент')
-                                h3.card__title Абитуриенты и студенты
-                            p.card__content
-                              | Данная группа пользователей
-                              | !{' '}
-                              span.txt-pink сможет ознакомиться
-                              | !{' '}
-                              | с результатами проведения проектной деятельности
-                              | в университете, а также
-                              | !{' '}
-                              span.txt-pink принять непосредственное участие
-                              | !{' '}
-                              | в создании новых проектов под руководством
-                              | кураторов и индустриальных партнеров.
-                        li.target__card.card
-                            .card__intro
-                                +picture('target', 'jpg', 'management', 'management', 'management', 640, 650, 'Ликующие студенты')
-                                h3.card__title Руководство университета
-                            p.card__content
-                              | Внедрение системы
-                              | !{' '}
-                              span.txt-pink облегчит процесс привлечения
-                              | !{' '}
-                              | индустриальных партнеров и увеличит
-                              | !{' '}
-                              span.txt-pink прирост числа абитуриентов
-                              | !{' '}
-                              | . Богатство функционала позволит наладить
-                              | систему ведения проектной деятельности в
-                              | рамках образовательного процесса.
-                        li.target__card.card
-                            .card__intro
-                                +picture('target', 'jpg', 'industry', 'industry', 'industry', 640, 650, 'Индустриальные центры')
-                                h3.card__title Индустриальные партнеры
-                            p.card__content
-                              span.txt-pink Основная задача
-                              | !{' '}
-                              | рынка труда —  поиск работников.
-                              | Благодаря данной системе, компании могут
-                              | обеспечить себя
-                              | !{' '}
-                              span.txt-pink проверенными сотрудниками
-                              | !{' '}
-                              | в лице студентов - исполнителями проектов.
+                  +svg('star', 213, 213, 'target__star')
+                  h2.target__title
+                    | На кого ориентирована
+                    | система?
+                  ul.target__list
+                      li.target__card.card
+                          .card__intro
+                              +picture('target', 'jpg', 'student', 'student', 'student', 640, 650, 'Читающий студент')
+                              h3.card__title Абитуриенты и студенты
+                          p.card__content
+                            | Данная группа пользователей
+                            | !{' '}
+                            span.txt-pink сможет ознакомиться
+                            | !{' '}
+                            | с результатами проведения проектной деятельности
+                            | в университете, а также
+                            | !{' '}
+                            span.txt-pink принять непосредственное участие
+                            | !{' '}
+                            | в создании новых проектов под руководством
+                            | кураторов и индустриальных партнеров.
+                      li.target__card.card
+                          .card__intro
+                              +picture('target', 'jpg', 'management', 'management', 'management', 640, 650, 'Ликующие студенты')
+                              h3.card__title Руководство университета
+                          p.card__content
+                            | Внедрение системы
+                            | !{' '}
+                            span.txt-pink облегчит процесс привлечения
+                            | !{' '}
+                            | индустриальных партнеров и увеличит
+                            | !{' '}
+                            span.txt-pink прирост числа абитуриентов
+                            | !{' '}
+                            | . Богатство функционала позволит наладить
+                            | систему ведения проектной деятельности в
+                            | рамках образовательного процесса.
+                      li.target__card.card
+                          .card__intro
+                              +picture('target', 'jpg', 'industry', 'industry', 'industry', 640, 650, 'Индустриальные центры')
+                              h3.card__title Индустриальные партнеры
+                          p.card__content
+                            span.txt-pink Основная задача
+                            | !{' '}
+                            | рынка труда —  поиск работников.
+                            | Благодаря данной системе, компании могут
+                            | обеспечить себя
+                            | !{' '}
+                            span.txt-pink проверенными сотрудниками
+                            | !{' '}
+                            | в лице студентов - исполнителями проектов.
             section.main__realization.realization
                 .realization__wrapper
-                    h2.realization__title Реализации
-                    .realization__content
-                        +svg('realization', 367, 324)
-                        p.realization__text
-                          | Информационная система поддержки
-                          | студенческой проектной деятельности
-                          | на факультете информационных технологий
-                          | !{' '}
-                          span.txt-pink Московского политеха
+                  +svg('rocket-folder', 414, 265, 'realization__img')
+                  h2.realization__title Реализации
+                  .realization__content
+                      +svg('realization', 367, 324)
+                      p.realization__text
+                        | Информационная система поддержки
+                        | студенческой проектной деятельности
+                        | на факультете информационных технологий
+                        | !{' '}
+                        span.txt-pink Московского политеха
             section.main__team.team
                 .team__wrapper
-                    h2.team__title Команда
-                    ul.team__list
-                        li.team__item
-                            +picture('team', 'jpg', 'first', 'first', 'first', 498, 495, 'Владислав Филиппович')
-                            .team__content
-                                h3.team__name Владислав Филиппович
-                                p.team__job.team__job--leader Руководитель проекта
-                                p.team__job Фронтенд-разработчик
-                        li.team__item
-                            +picture('team', 'jpg', 'second', 'second', 'second', 498, 495, 'Семен Барышников')
-                            .team__content
-                                h3.team__name Семен Барышников
-                                p.team__job Бэкенд-разработчик
-                        li.team__item
-                            +picture('team', 'jpg', 'third', 'third', 'third', 498, 495, 'Никита Балдуев')
-                            .team__content
-                                h3.team__name Никита Балдуев
-                                p.team__job Фронтенд-разработчик
-                        li.team__item
-                            +picture('team', 'jpg', 'fourth', 'fourth', 'fourth', 498, 495, 'Никита Балдуев')
-                            .team__content
-                                h3.team__name Никита Балдуев
-                                p.team__job Фронтенд-разработчик
-                        li.team__item
-                            +picture('team', 'jpg', 'fifth', 'fifth', 'fifth', 498, 495, 'Александр Лагутов')
-                            .team__content
-                                h3.team__name Александр Лагутов
-                                p.team__job Дизайнер
-                            +svg('tail', 171, 189)
+                  +svg('star', 176, 176, 'team__star')
+                  h2.team__title Команда
+                  ul.team__list
+                      li.team__item
+                          +picture('team', 'jpg', 'first', 'first', 'first', 498, 495, 'Владислав Филиппович')
+                          .team__content
+                              h3.team__name Владислав Филиппович
+                              p.team__job.team__job--leader Руководитель проекта
+                                +svg('star', 63, 63, 'team__leader')
+                              p.team__job Фронтенд-разработчик
+                      li.team__item
+                          +picture('team', 'jpg', 'second', 'second', 'second', 498, 495, 'Семен Барышников')
+                          .team__content
+                              h3.team__name Семен Барышников
+                              p.team__job Бэкенд-разработчик
+                      li.team__item
+                          +picture('team', 'jpg', 'third', 'third', 'third', 498, 495, 'Никита Балдуев')
+                          .team__content
+                              h3.team__name Никита Балдуев
+                              p.team__job Фронтенд-разработчик
+                      li.team__item
+                          +picture('team', 'jpg', 'fourth', 'fourth', 'fourth', 498, 495, 'Никита Балдуев')
+                          .team__content
+                              h3.team__name Никита Балдуев
+                              p.team__job Фронтенд-разработчик
+                      li.team__item
+                          +picture('team', 'jpg', 'fifth', 'fifth', 'fifth', 498, 495, 'Александр Лагутов')
+                          .team__content
+                              h3.team__name Александр Лагутов
+                              p.team__job Дизайнер
+                          +svg('tail', 171, 189)
         footer.body__footer.footer
             .footer__wrapper
-                h2.footer__title Как найти с нами связь
-                ul.footer__connections.connections
-                    li.connections__item
-                        a.connections__img-link(href="")
-                            +svg('vk', 180, 180)
-                        a.connections__link(href="") @vkontakte
-                    li.connections__item
-                        a.connections__img-link(href="")
-                            +svg('tg', 180, 180)
-                        a.connections__link(href="") @telegram
-                a.connections__mail(href="mailto:ourmail@mail.ru") ourmail@mail.ru
-                .footer__note.note
-                    +svg('folder-small', 48, 48)
-                    p.note__text
-                        span.note__line Москва
-                        span.note__line © 2021 Folipro
-                        span.note__line Все права защищены.
+              +svg('wave', 430, 700, 'footer__img')
+              h2.footer__title Как найти с нами связь
+              ul.footer__connections.connections
+                  li.connections__item
+                      a.connections__img-link(href="")
+                          +svg('vk', 180, 180)
+                      a.connections__link(href="") @vkontakte
+                  li.connections__item
+                      a.connections__img-link(href="")
+                          +svg('tg', 180, 180)
+                      a.connections__link(href="") @telegram
+              a.connections__mail(href="mailto:ourmail@mail.ru") ourmail@mail.ru
+              .footer__note.note
+                  +svg('folder-small', 48, 48)
+                  p.note__text
+                      span.note__line Москва
+                      span.note__line © 2021 Folipro
+                      span.note__line Все права защищены.
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        script(type="text/javascript").
+          const swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            direction: 'horizontal',
+          });

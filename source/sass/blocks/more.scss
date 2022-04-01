@@ -1,5 +1,19 @@
 .more__wrapper {
   @include wrapper;
+  position: relative;
+}
+
+.more__img {
+  position: absolute;
+  top: 0.7rem;
+  left: -29.2rem;
+}
+
+.more__star {
+  position: absolute;
+  top: 14rem;
+  left: 38rem;
+  transform: rotate(-14deg)
 }
 
 .more__title {

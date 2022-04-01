@@ -8,7 +8,11 @@
   display: flex;
 
   &:first-child {
-    margin-left: 0;
+    margin-left: 13rem;
+  }
+
+  &:last-child {
+    margin-right: 13rem;
   }
 }
 

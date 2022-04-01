@@ -1,5 +1,13 @@
 .footer__wrapper {
   @include wrapper;
+  position: relative;
+}
+
+.footer__img {
+  position: absolute;
+  top: -3.1rem;
+  left: -17.3rem;
+  transform: rotate(-16deg)
 }
 
 .footer__title {

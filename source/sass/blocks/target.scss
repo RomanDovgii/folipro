@@ -1,6 +1,14 @@
 .target__wrapper {
   @include wrapper;
   max-width: 192rem;
+  position: relative;
+}
+
+.target__star {
+  position: absolute;
+  top: -1.3rem;
+  left: 26rem;
+  transform: rotate(-30deg)
 }
 
 .target__title {
