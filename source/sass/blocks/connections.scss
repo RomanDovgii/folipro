@@ -1,0 +1,53 @@
+.connections {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.connections__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+
+.connections__img-link {
+  color: $white;
+  text-decoration: none;
+
+  svg {
+    display: block;
+    border-radius: 5rem;
+    background-color: $black-800
+  }
+}
+
+.connections__link {
+  @include font-mont;
+  color: $white;
+  font-weight: 500;
+  font-size: 2.9rem;
+  line-height: 4.4rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.connections__mail {
+  @include font-mont;
+  display: block;
+  width: 50rem;
+  min-height: 7.7rem;
+  padding: 1rem 4.4rem;
+  border-radius: 2rem;
+
+  margin: 0 auto;
+  margin-top: 7.5rem;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 4.7rem;
+  line-height: 5.7rem;
+  color: $pink-100;
+  background-color: $black-800;
+}

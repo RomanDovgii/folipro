@@ -4,4 +4,16 @@
 
 .footer__title {
   @include title;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+
+.footer__connections {
+  margin-top: 6.2rem;
+}
+
+.footer__note {
+  margin-top: 18.3rem;
+  margin-right: 0;
+  margin-left: auto;
 }

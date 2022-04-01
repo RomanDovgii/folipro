@@ -4,4 +4,71 @@
 
 .team__title {
   @include title;
+  display: block;
+  margin-left: auto;
+  text-align: right;
+  margin-right: 36.5rem;
+}
+
+.team__list {
+  list-style: none;
+  margin-left: 14.2rem;
+  margin-top: 6rem;
+}
+
+.team__item {
+  display: flex;
+  min-height: 49.5rem;
+
+  img {
+    object-fit: cover;
+    display: block;
+    width: 49.8rem;
+    height: 100%;
+  }
+
+  &:first-child {
+    img {
+      border-top-right-radius: 12rem;
+      border-top-left-radius: 12rem;
+    }
+  }
+
+  &:last-child {
+    position: relative;
+
+    img {
+      border-bottom-right-radius: 12rem;
+      border-bottom-left-radius: 12rem;
+    }
+
+    svg {
+      position: absolute;
+      bottom: -19.2rem;
+      left: 16.3rem;
+    }
+  }
+}
+
+.team__content {
+  margin-left: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team__name {
+  @include name;
+}
+
+.team__job {
+  @include job;
+
+  &--leader {
+    color: $pink-100;
+  }
+
+  &:first-of-type {
+    margin-top: 2rem;
+  }
 }

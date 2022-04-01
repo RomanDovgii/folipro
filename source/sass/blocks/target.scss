@@ -1,5 +1,6 @@
 .target__wrapper {
   @include wrapper;
+  max-width: 192rem;
 }
 
 .target__title {
@@ -7,5 +8,11 @@
   display: block;
   width: 108.8rem;
   margin-left: auto;
-  margin-right: -1rem;
+  margin-right: 11.1rem;
+}
+
+.target__list {
+  list-style: none;
+  display: flex;
+  margin-top: 6.1rem;
 }

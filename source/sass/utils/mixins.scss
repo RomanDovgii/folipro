@@ -28,6 +28,22 @@
   line-height: 11rem;
 }
 
+@mixin name {
+  @include font-mont;
+  font-weight: 700;
+  font-size: 4.7rem;
+  line-height: 5.7rem;
+  color: $white;
+}
+
+@mixin job {
+  @include font-mont;
+  font-weight: 500;
+  font-size: 2.9rem;
+  line-height: 150%;
+  color: rgba($white, 0.5);
+}
+
 @mixin header {
   font-size: 3.6rem;
 }
