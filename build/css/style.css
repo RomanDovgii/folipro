@@ -434,10 +434,27 @@ html {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.main__hero {
+  margin-top: 28.3rem; }
+
+.main__more {
+  margin-top: 41.5rem; }
+
+.main__why {
+  margin-top: 24.9rem; }
+
+.main__target {
+  margin-top: 28rem; }
+
 .footer__wrapper {
   width: 100%;
   max-width: 166rem;
   margin: 0 auto; }
+
+.footer__title {
+  font-family: 'Dela Gothic One', 'Arial', sans-serif;
+  font-size: 7.6rem;
+  line-height: 11rem; }
 
 .navigation {
   position: relative;
@@ -475,9 +492,6 @@ html {
     opacity: 1;
     outline: none; }
 
-.hero {
-  padding-top: 28.3rem; }
-
 .hero__wrapper {
   width: 100%;
   max-width: 166rem;
@@ -491,9 +505,6 @@ html {
   width: 45rem;
   margin-top: 3.7rem;
   margin-left: 14.5rem; }
-
-.more {
-  padding-top: 42.6rem; }
 
 .more__wrapper {
   width: 100%;
@@ -512,7 +523,7 @@ html {
   background-color: #1F2128;
   width: 99.8rem;
   border-radius: 50px;
-  margin-top: 7.3rem;
+  margin-top: 6.3rem;
   margin-left: auto;
   margin-right: 9.4rem; }
 
@@ -524,9 +535,6 @@ html {
     font-family: 'Dela Gothic One', 'Arial', sans-serif; }
   .more__text:first-child {
     margin-top: 0; }
-
-.why {
-  padding-top: 22.9rem; }
 
 .why__wrapper {
   width: 100%;
@@ -583,6 +591,15 @@ html {
   max-width: 166rem;
   margin: 0 auto; }
 
+.target__title {
+  font-family: 'Dela Gothic One', 'Arial', sans-serif;
+  font-size: 7.6rem;
+  line-height: 11rem;
+  display: block;
+  width: 108.8rem;
+  margin-left: auto;
+  margin-right: -1rem; }
+
 .realization__wrapper {
   width: 100%;
   max-width: 166rem;
@@ -592,3 +609,8 @@ html {
   width: 100%;
   max-width: 166rem;
   margin: 0 auto; }
+
+.team__title {
+  font-family: 'Dela Gothic One', 'Arial', sans-serif;
+  font-size: 7.6rem;
+  line-height: 11rem; }

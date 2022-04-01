@@ -1,3 +1,11 @@
 .target__wrapper {
   @include wrapper;
 }
+
+.target__title {
+  @include title;
+  display: block;
+  width: 108.8rem;
+  margin-left: auto;
+  margin-right: -1rem;
+}

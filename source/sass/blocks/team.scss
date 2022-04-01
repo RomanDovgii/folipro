@@ -1,3 +1,7 @@
 .team__wrapper {
   @include wrapper;
 }
+
+.team__title {
+  @include title;
+}

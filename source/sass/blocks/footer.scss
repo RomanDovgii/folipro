@@ -1,3 +1,7 @@
 .footer__wrapper {
   @include wrapper;
 }
+
+.footer__title {
+  @include title;
+}
