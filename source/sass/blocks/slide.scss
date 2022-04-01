@@ -1,0 +1,29 @@
+.slide {
+  min-width: 92rem;
+  min-height: 32.2rem;
+  background-color: $black-800;
+  border-radius: 5rem;
+  margin-left: 10rem;
+  padding: 5rem 7rem;
+  display: flex;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.slide__content {
+  padding-top: 2.8rem;
+  padding-left: 4.8rem;
+}
+
+.slide__title {
+  @include font-mont;
+  font-size: 4.7rem;
+  line-height: 5.75rem;
+}
+
+.slide__text {
+  @include text;
+  margin-top: 2.2rem;
+}

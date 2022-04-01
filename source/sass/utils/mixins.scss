@@ -5,15 +5,27 @@
 }
 
 @mixin font {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 500;
+}
+
+@mixin font-mont {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+@mixin font-dela {
   font-family: 'Dela Gothic One', 'Arial', sans-serif;
 }
 
 @mixin text {
   font-size: 2.9rem;
+  line-height: 4.4rem;
 }
 
 @mixin title {
+  font-family: 'Dela Gothic One', 'Arial', sans-serif;
   font-size: 7.6rem;
+  line-height: 11rem;
 }
 
 @mixin header {
@@ -22,7 +34,7 @@
 
 @mixin wrapper {
   width: 100%;
-  max-width: 144rem;
+  max-width: $wrapper-desktop;
   margin: 0 auto;
 }
 

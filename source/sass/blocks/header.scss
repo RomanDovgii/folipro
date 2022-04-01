@@ -15,4 +15,6 @@
 .header__wrapper {
   @include wrapper;
   max-width: 150rem;
+  display: flex;
+  justify-content: center;
 }

@@ -1,5 +1,6 @@
 include ../basic/sprite
 include ../basic/svg
+include ../basic/picture
 
 doctype html
 html(lang="en")
@@ -30,18 +31,25 @@ html(lang="en")
             section.main__hero.hero
                 .hero__wrapper
                     .hero__content
-                        img.hero__logo(src="", alt="Foliro")
+                        +svg("logo", 594, 113)
                         p.hero__text Информационная система поддержки студенческой проектной деятельности в высших учебных заведениях
                     img.hero__img(src="", alt="")
             section.main__more.more
               .more__wrapper
-                h2.more__title
+                h2.more__title Познакомимся поближе
                 .more__text-wrapper
                   p.more__text
                     span.txt-pink Folipro
-                    | — цифровое решение, позволяющее централизованно загружать и хранить проекты,
-                    | отображать всю необходимую информацию о них, а также в любой момент быстро
-                    | получить к ним доступ.
+                    | !{' '}
+                    | — цифровое решение, позволяющее централизованно загружать и хранить
+                    br
+                    | проекты,
+                    | отображать всю необходимую информацию о
+                    br
+                    | них, а также в любой момент быстро
+                    | получить к ним
+                    br
+                    | доступ.
                   p.more__text
                     | Данная система обладает функционалом оценки выполнения проектов,
                     | сбора и хранения материалов, поиска архивных проектов, формирования
@@ -51,32 +59,34 @@ html(lang="en")
                     | приток абитуриентов.
             section.main__why.why
                 .why__wrapper
-                    h2.why__title Почему стоит выбрать нас?
+                    h2.why__title
+                      | Почему стоит
+                      | выбрать нас?
                     ul.why__slider.slider
                         li.slider__slide.slide
-                            img.slide__img(src="", alt="")
+                            +picture('slider', 'png', 'scale', 'scale', 'scale', 222, 222, 'Изображение масштабируемость')
                             .slide__content
-                                h3.slide__title Масштабируемость
+                                h3.slide__title.txt-pink Масштабируемость
                                 p.slide__text Разработка системы независимо в любых масштабах
                         li.slider__slide.slide
-                            img.slide__img(src="", alt="")
+                            +picture('slider', 'png', 'client', 'client', 'client', 222, 222, 'Изображение клиент')
                             .slide__content
-                                h3.slide__title Клиент всегда прав
+                                h3.slide__title.txt-pink Клиент всегда прав
                                 p.slide__text Изменение системы под требования заказчика
                         li.slider__slide.slide
-                            img.slide__img(src="", alt="")
+                            +picture('slider', 'png', 'everyone', 'everyone', 'everyone', 222, 222, 'Изображение для каждого')
                             .slide__content
-                                h3.slide__title Каждому свое
+                                h3.slide__title.txt-pink Каждому свое
                                 p.slide__text Индивидуальный подход при разработке
                         li.slider__slide.slide
-                            img.slide__img(src="", alt="")
+                            +picture('slider', 'png', 'profit', 'profit', 'profit', 222, 222, 'Изображение выгодность')
                             .slide__content
-                                h3.slide__title Выгодность
+                                h3.slide__title.txt-pink Выгодность
                                 p.slide__text Гибкая ценовая политика
                         li.slider__slide.slide
-                            img.slide__img(src="", alt="")
+                            +picture('slider', 'png', 'quality', 'quality', 'quality', 222, 222, 'Изображение качество')
                             .slide__content
-                                h3.slide__title Качественность
+                                h3.slide__title.txt-pink Качественность
                                 p.slide__text Гарантия качественного результата
             section.main__target.target
                 .target__wrapper

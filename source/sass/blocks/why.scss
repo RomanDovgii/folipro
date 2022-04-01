@@ -1,0 +1,14 @@
+.why {
+  padding-top: 22.9rem;
+}
+
+.why__wrapper {
+  @include wrapper;
+}
+
+.why__title {
+  @include title;
+  display: block;
+  width: 71rem;
+  padding-left: 1rem;
+}
