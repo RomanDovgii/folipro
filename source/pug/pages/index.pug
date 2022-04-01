@@ -18,17 +18,17 @@ html(lang="en")
                 nav.header__navigation.navigation
                     ul.navigation__list
                         li.navigation__item
-                            a.navigation__link.navigation__link--active(href="") О проекте
+                            a.navigation__link.navigation__link--active(href="#about") О проекте
                         li.navigation__item
-                            a.navigation__link(href="") Преимущества
+                            a.navigation__link(href="#why") Преимущества
                         li.navigation__item
-                            a.navigation__link(href="") Работы
+                            a.navigation__link(href="#works") Работы
                         li.navigation__item
-                            a.navigation__link(href="") Команда
+                            a.navigation__link(href="#team") Команда
                         li.navigation__item
-                            a.navigation__link(href="") Обратная связь
+                            a.navigation__link(href="#back") Обратная связь
         main.body__main.main
-            section.main__hero.hero
+            section.main__hero.hero#about
                 .hero__wrapper
                   +svg("long-line", 2620, 5090, 'hero__line')
                   +svg("hero", 775, 779, 'hero__img')
@@ -36,7 +36,7 @@ html(lang="en")
                       +svg("logo", 594, 113)
                       p.hero__text Информационная система поддержки студенческой проектной деятельности в высших учебных заведениях
                   img.hero__img(src="", alt="")
-            section.main__more.more
+            section.main__more.more#more
               .more__wrapper
                 +svg('star', 170, 170, 'more__star')
                 +svg('info', 600, 600, 'more__img')
@@ -61,7 +61,7 @@ html(lang="en")
                     | Эти и другие возможности позволяют наладить систему ведения студенческой
                     | проектной деятельности, привлечь новых индустриальных партнеров и увеличить
                     | приток абитуриентов.
-            section.main__why.why
+            section.main__why.why#why
                 .why__wrapper
                   +svg('star', 181, 170, 'why__star')
                   h2.why__title
@@ -147,7 +147,7 @@ html(lang="en")
                             span.txt-pink проверенными сотрудниками
                             | !{' '}
                             | в лице студентов - исполнителями проектов.
-            section.main__realization.realization
+            section.main__realization.realization#works
                 .realization__wrapper
                   +svg('rocket-folder', 414, 265, 'realization__img')
                   h2.realization__title Реализации
@@ -159,7 +159,7 @@ html(lang="en")
                         | на факультете информационных технологий
                         | !{' '}
                         span.txt-pink Московского политеха
-            section.main__team.team
+            section.main__team.team#team
                 .team__wrapper
                   +svg('star', 176, 176, 'team__star')
                   h2.team__title Команда
@@ -193,7 +193,7 @@ html(lang="en")
                               p.team__job Дизайнер
                           +svg('tail', 171, 189)
         footer.body__footer.footer
-            .footer__wrapper
+            .footer__wrapper#back
               +svg('wave', 430, 700, 'footer__img')
               h2.footer__title Как найти с нами связь
               ul.footer__connections.connections
