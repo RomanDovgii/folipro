@@ -1,0 +1,178 @@
+include ../basic/sprite
+include ../basic/svg
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Folipro
+        link(rel="stylesheet", href="/css/style.css")
+    body.body
+        +sprite()
+        header.body__header.header
+            .header__wrapper
+                +svg('header-background', 2250, 342)
+                nav.header__navigation.navigation
+                    ul.navigation__list
+                        li.navigation__item
+                            a.navigation__link.navigation__link--active(href="") О проекте
+                        li.navigation__item
+                            a.navigation__link(href="") Преимущества
+                        li.navigation__item
+                            a.navigation__link(href="") Работы
+                        li.navigation__item
+                            a.navigation__link(href="") Команда
+                        li.navigation__item
+                            a.navigation__link(href="") Обратная связь
+        main.body__main.main
+            section.main__hero.hero
+                .hero__wrapper
+                    .hero__content
+                        img.hero__logo(src="", alt="Foliro")
+                        p.hero__text Информационная система поддержки студенческой проектной деятельности в высших учебных заведениях
+                    img.hero__img(src="", alt="")
+            section.main__more.more
+              .more__wrapper
+                h2.more__title
+                .more__text-wrapper
+                  p.more__text
+                    span.txt-pink Folipro
+                    | — цифровое решение, позволяющее централизованно загружать и хранить проекты,
+                    | отображать всю необходимую информацию о них, а также в любой момент быстро
+                    | получить к ним доступ.
+                  p.more__text
+                    | Данная система обладает функционалом оценки выполнения проектов,
+                    | сбора и хранения материалов, поиска архивных проектов, формирования
+                    | статистики для отчетности руководству, личных карточек студентов и др.
+                    | Эти и другие возможности позволяют наладить систему ведения студенческой
+                    | проектной деятельности, привлечь новых индустриальных партнеров и увеличить
+                    | приток абитуриентов.
+            section.main__why.why
+                .why__wrapper
+                    h2.why__title Почему стоит выбрать нас?
+                    ul.why__slider.slider
+                        li.slider__slide.slide
+                            img.slide__img(src="", alt="")
+                            .slide__content
+                                h3.slide__title Масштабируемость
+                                p.slide__text Разработка системы независимо в любых масштабах
+                        li.slider__slide.slide
+                            img.slide__img(src="", alt="")
+                            .slide__content
+                                h3.slide__title Клиент всегда прав
+                                p.slide__text Изменение системы под требования заказчика
+                        li.slider__slide.slide
+                            img.slide__img(src="", alt="")
+                            .slide__content
+                                h3.slide__title Каждому свое
+                                p.slide__text Индивидуальный подход при разработке
+                        li.slider__slide.slide
+                            img.slide__img(src="", alt="")
+                            .slide__content
+                                h3.slide__title Выгодность
+                                p.slide__text Гибкая ценовая политика
+                        li.slider__slide.slide
+                            img.slide__img(src="", alt="")
+                            .slide__content
+                                h3.slide__title Качественность
+                                p.slide__text Гарантия качественного результата
+            section.main__target.target
+                .target__wrapper
+                    h2.target__title На кого ориентирована система?
+                    ul.target__list
+                        li.target__card.card
+                            .card__intro
+                                img.card__img(src="", alt="")
+                                h3.card__title Абитуриенты и студенты
+                            p.card__content
+                              | Данная группа пользователей
+                              span.txt-pink сможет ознакомиться
+                              | с результатами проведения проектной деятельности
+                              | в университете, а также
+                              span.txt-pink принять непосредственное участие
+                              | в создании новых проектов под руководством
+                              | кураторов и индустриальных партнеров.
+                        li.target__card.card
+                            .card__intro
+                                img.card__img(src="", alt="")
+                                h3.card__title Руководство университета
+                            p.card__content
+                              | Внедрение системы
+                              span.txt-pink облегчит процесс привлечения
+                              | индустриальных партнеров и увеличит
+                              span.txt-pink прирост числа абитуриентов
+                              | . Богатство функционала позволит наладить
+                              | систему ведения проектной деятельности в
+                              | рамках образовательного процесса.
+                        li.target__card.card
+                            .card__intro
+                                img.card__img(src="", alt="")
+                                h3.card__title Индустриальные партнеры
+                            p.card__content
+                              span.txt-pink Основная задача
+                              | рынка труда —  поиск работников.
+                              | Благодаря данной системе, компании могут
+                              | обеспечить себя
+                              span.txt-pink проверенными сотрудниками
+                              | в лице студентов - исполнителями проектов.
+            section.main__realization.realization
+                .realization__wrapper
+                    h2.realization__title Реализации
+                    .realization__content
+                        img.realization__img(src="", alt="")
+                        p.realization__text
+                          | Информационная система поддержки
+                          | студенческой проектной деятельности
+                          | на факультете информационных технологий
+                          span.txt-pink Московского политеха
+            section.main__team.team
+                .team__wrapper
+                    h2.team__title Команда
+                    ul.team__list
+                        li.team__item
+                            img.team__img(src="", alt="")
+                            .team__content
+                                h3.team__name Владислав Филиппович
+                                p.team__job.team__job--leader Руководитель проекта
+                                p.team__job Фронтенд-разработчик
+                        li.team__item
+                            img.team__img(src="", alt="")
+                            .team__content
+                                h3.team__name Семен Барышников
+                                p.team__job Бэкенд-разработчик
+                        li.team__item
+                            img.team__img(src="", alt="")
+                            .team__content
+                                h3.team__name Никита Балдуев
+                                p.team__job Фронтенд-разработчик
+                        li.team__item
+                            img.team__img(src="", alt="")
+                            .team__content
+                                h3.team__name Никита Балдуев
+                                p.team__job Фронтенд-разработчик
+                        li.team__item
+                            img.team__img(src="", alt="")
+                            .team__content
+                                h3.team__name Александр Лагутов
+                                p.team__job Дизайнер
+        footer.body__footer.footer
+            .footer__wrapper
+                h2.footer__title Как найти с нами связь
+                ul.footer__connections.connection
+                    li.connections__item
+                        a.connections__img-link(href="")
+                            img.connections__img(src="", alt="")
+                        a.connections__link(href="") @vkontakte
+                    li.connections__item
+                        a.connections__img-link(href="")
+                            img.connections__img(src="", alt="")
+                        a.connections__link(href="") @telegram
+                a.connections__mail(href="mailto:ourmail@mail.ru") ourmail@mail.ru
+                .footer__note.note
+                    img.note__img(src="", alt="")
+                    p.note__text
+                        span.note__line Москва
+                        span.note__line © 2021 Folipro
+                        span.note__line Все права защищены.

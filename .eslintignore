@@ -1,0 +1,6 @@
+build/*.js
+source/js/vendor/*.js
+source/js/utils/*.js
+source/js/modules/canvas.js
+gulpfile.js
+webpack.config.js
