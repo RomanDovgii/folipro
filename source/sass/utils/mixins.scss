@@ -54,6 +54,18 @@
   margin: 0 auto;
 }
 
+@mixin viewport-desktop-large {
+  @media (max-width: $viewport-desktop-large) {
+      @content;
+  }
+}
+
+@mixin viewport-desktop-small {
+  @media (max-width: $viewport-desktop-small) {
+      @content;
+  }
+}
+
 @mixin viewport-desktop {
   @media (max-width: $viewport-desktop) {
       @content;

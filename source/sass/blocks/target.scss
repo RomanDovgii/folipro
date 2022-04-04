@@ -8,7 +8,11 @@
   position: absolute;
   top: -1.3rem;
   left: 26rem;
-  transform: rotate(-30deg)
+  transform: rotate(-30deg);
+
+  @include viewport-desktop-large {
+    display: none;
+  }
 }
 
 .target__title {
@@ -23,4 +27,8 @@
   list-style: none;
   display: flex;
   margin-top: 6.1rem;
+  @include viewport-desktop-large {
+    flex-direction: column;
+    align-items: center;
+  }
 }

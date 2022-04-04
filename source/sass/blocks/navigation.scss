@@ -20,6 +20,19 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include viewport-desktop-small {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &:first-child {
+      padding-left: 1rem;
+    }
+
+    &:last-child {
+      padding-right: 1rem;
+    }
+  }
 }
 
 .navigation__link {
@@ -28,7 +41,7 @@
   opacity: 0.4;
   transition: opacity 0.3s;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 3.6rem;
   @include font-dela;
 
   &--active {

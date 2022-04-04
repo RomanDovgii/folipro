@@ -13,7 +13,11 @@
   position: absolute;
   top: 14rem;
   left: 38rem;
-  transform: rotate(-14deg)
+  transform: rotate(-14deg);
+
+  @include viewport-desktop-large {
+    display: none;
+  }
 }
 
 .more__title {

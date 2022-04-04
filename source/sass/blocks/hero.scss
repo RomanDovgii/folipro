@@ -8,6 +8,10 @@
   position: absolute;
   right: 3.4rem;
   top: -27.2rem;
+
+  @include viewport-desktop-small {
+    right: -20rem;
+  }
 }
 
 .hero__line {

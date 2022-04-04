@@ -1,3 +1,10 @@
+.card {
+  @include viewport-desktop-large {
+    max-width: 58rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .card__intro {
   position: relative;
 
